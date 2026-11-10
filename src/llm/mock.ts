@@ -148,6 +148,7 @@ function detectVerb(text: string): Verb | null {
       input: () => ({ todos: [{ text: '跑通 agent loop', done: true }, { text: '接入真实模型', done: false }] }),
     };
   }
+  if (/时间|几点|日期/.test(t)) return { name: 'get_time', input: () => ({}) };
   if (/子代理|subagent|委托|delegate/.test(t)) {
     return { name: 'subagent', input: () => ({ prompt: '用一句话介绍 DeepSeek Harness 的插件化设计' }) };
   }
