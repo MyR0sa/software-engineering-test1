@@ -4,11 +4,13 @@ export { listDirTool, readFileTool, writeFileTool } from './builtin/fs';
 export { bashTool } from './builtin/bash';
 export { todoTool } from './builtin/todo';
 export { subagentTool } from './builtin/subagent';
+export { getTimeTool } from './builtin/time';
 import { Tool } from './types';
 import { listDirTool, readFileTool, writeFileTool } from './builtin/fs';
 import { bashTool } from './builtin/bash';
 import { todoTool } from './builtin/todo';
 import { subagentTool } from './builtin/subagent';
+import { getTimeTool } from './builtin/time';
 
 /** The default tool set that ships with the harness. */
 export const builtinTools: Tool[] = [
@@ -18,4 +20,5 @@ export const builtinTools: Tool[] = [
   bashTool,
   todoTool,
   subagentTool,
+  getTimeTool,
 ];
