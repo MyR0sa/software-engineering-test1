@@ -1,0 +1,9 @@
+node_modules/
+dist/
+client/dist/
+client/node_modules/
+workspace/
+workspace-smoke/
+.env
+*.log
+.DS_Store
